@@ -1,6 +1,6 @@
 node {
     stage('SCM-Checkout') {
-	    git branch: 'main', credentialsId: 'jenkins-cred', url: 'https://github.com/vikas99341/hello-world.git'
+	    git branch: 'main', credentialsId: 'jenkins-cred', url: 'https://github.com/CJK001/hello-world.git'
 	}
     stage('Maven-compile') {
         def mvnHome = tool name: 'maven_home', type: 'maven'
